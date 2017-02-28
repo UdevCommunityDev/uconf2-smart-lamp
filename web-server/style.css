@@ -1,0 +1,24 @@
+
+#row {
+    text-align: center;
+}
+
+#row button {
+    height: 50px;
+    width: 150px;
+    margin-top: 10px;
+}
+
+#row p {
+    margin-top: 20px;
+}
+
+.on {
+    color: green;
+    font-weight: normal;
+}
+
+.off {
+    color: red;
+    font-weight: bold;
+}
