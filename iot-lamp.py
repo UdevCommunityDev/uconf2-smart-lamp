@@ -13,7 +13,7 @@ GPIO.setmode(GPIO.BOARD)
 #GPIO.setmode(GPIO.BCM)
 #GPIO.setwarning(False)
 
-lamp = 29
+lamp = 40
 GPIO.setup(lamp, GPIO.OUT)
 
 # test led
@@ -29,9 +29,9 @@ t = time.time()
 while True:
     # get the lamp status from the server
     status = urllib2.urlopen("http://udevcommunity.org/uconf2-iot-test/get_lamp_status.php").read()
-    if (status == '1')
-        GPIO.output(lamp, 1):
-    elif (status == '0')
-        GPIO.output(lamp, 0):
+    if (status == '1'):
+        GPIO.output(lamp, 1)
+    elif (status == '0'):
+        GPIO.output(lamp, 0)
 
 #GPIO.cleanup()
